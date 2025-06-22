@@ -1,0 +1,46 @@
+
+<?php
+
+include("header.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=5, initial-scale=1.0">
+    <title>B&S - Lenses</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     
+
+      <br><br>
+     
+
+            <!-- ------------------------------------------products------------------------------------- -->
+            <div class="product-grid">
+              <div class="product-card">
+        <a href="/canonlens.php"> <img src="canon-logo.png" alt="Canon"></a>
+  </div>
+  <div class="product-card">
+   <a href="/sonylens.php"> <img src="sony-logo.jpg" alt="Sony "></a>
+  </div>
+  <div class="product-card">
+    <img src="nikon-logo.jpg" alt="Brand 3">
+  </div>
+  <div class="product-card">
+    <img src="zeis.jpg" alt="Brand 4">
+  </div>
+  <div class="product-card">
+    <a href="/gopro.php"><img src="tamron.png" alt="Brand 4"></a>
+  </div>
+  <div class="product-card">
+   <a href="/dji.php"> <img src="digma.png" alt="Brand 4"></a>
+  </div>
+</div>
+      </section>
+    
+</body>
+</html>

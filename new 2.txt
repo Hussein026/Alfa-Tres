@@ -1,0 +1,287 @@
+Post-Increment and Post-Decrement:
+
+bash
+
+#!/bin/bash
+id=5
+echo "Post-Increment: $id++ is $((id++))"
+echo "Post-Decrement: $id-- is $((id--))"
+
+
+
+
+2. Pre-Increment and Pre-Decrement:
+
+bash
+Copy code
+#!/bin/bash
+id=5
+echo "Pre-Increment: ++$id is $((++id))"
+echo "Pre-Decrement: --$id is $((--id))"
+
+
+
+
+3. Unary Minus and Plus:
+
+bash
+Copy code
+#!/bin/bash
+num=10
+echo "Unary Minus: -$num is $((-num))"
+echo "Unary Plus: +$num is $((+num))"
+
+
+
+
+
+4. Logical and Bitwise Negation:
+
+bash
+Copy code
+#!/bin/bash
+bool=true
+bitwise=5
+echo "Logical Negation: !bool is $((!bool))"
+echo "Bitwise Negation: ~bitwise is $((~bitwise))"
+
+
+
+
+
+
+5. Exponentiation:
+
+bash
+Copy code
+#!/bin/bash
+base=2
+power=3
+result=$((base ** power))
+echo "$base raised to the power of $power is $result"
+
+
+
+
+
+
+6. Multiplication, Division, Remainder:
+
+bash
+Copy code
+#!/bin/bash
+num1=10
+num2=3
+echo "Multiplication: $num1 * $num2 is $((num1 * num2))"
+echo "Division: $num1 / $num2 is $((num1 / num2))"
+echo "Remainder: $num1 % $num2 is $((num1 % num2))"
+
+
+
+
+
+
+7. Addition, Subtraction:
+
+bash
+Copy code
+#!/bin/bash
+num1=8
+num2=5
+echo "Addition: $num1 + $num2 is $((num1 + num2))"
+echo "Subtraction: $num1 - $num2 is $((num1 - num2))"
+
+
+
+
+
+
+
+8. Left and Right Bitwise Shifts:
+
+bash
+Copy code
+#!/bin/bash
+num=8
+echo "Left Shift: $num << 1 is $((num << 1))"
+echo "Right Shift: $num >> 1 is $((num >> 1))"
+
+
+
+
+
+
+
+9. Comparison:
+
+bash
+Copy code
+#!/bin/bash
+num1=10
+num2=15
+echo "$num1 <= $num2: $((num1 <= num2))"
+echo "$num1 >= $num2: $((num1 >= num2))"
+echo "$num1 < $num2: $((num1 < num2))"
+echo "$num1 > $num2: $((num1 > num2))"
+
+
+
+
+
+
+
+
+
+10. Equality and Inequality:
+
+bash
+Copy code
+#!/bin/bash
+str1="Hello"
+str2="World"
+echo "$str1 == $str2: $((str1 == str2))"
+echo "$str1 != $str2: $((str1 != str2))"
+
+
+
+
+
+
+
+
+
+11. Bitwise AND, XOR, OR:
+
+bash
+Copy code
+#!/bin/bash
+num1=5
+num2=3
+echo "Bitwise AND: $num1 & $num2 is $((num1 & num2))"
+echo "Bitwise XOR: $num1 ^ $num2 is $((num1 ^ num2))"
+echo "Bitwise OR: $num1 | $num2 is $((num1 | num2))"
+
+
+
+
+
+
+
+
+
+12. Logical AND, OR:
+
+bash
+Copy code
+#!/bin/bash
+bool1=true
+bool2=false
+echo "Logical AND: $bool1 && $bool2 is $((bool1 && bool2))"
+echo "Logical OR: $bool1 || $bool2 is $((bool1 || bool2))"
+
+
+
+
+
+
+
+
+13. String: Regexp Match in String:
+
+bash
+Copy code
+#!/bin/bash
+string="Hello, World!"
+regexp="Hello"
+if [[ $string =~ $regexp ]]; then
+    echo "String contains 'Hello'"
+else
+    echo "String does not contain 'Hello'"
+fi
+
+
+
+
+
+
+
+
+
+
+14. Assignment Operators:
+
+bash
+Copy code
+#!/bin/bash
+num=10
+echo "Original Value: $num"
+num=$((num += 5))
+echo "After += 5: $num"
+num=$((num *= 2))
+echo "After *= 2: $num"
+
+
+
+
+
+
+
+
+
+15. Comma Operator:
+
+bash
+Copy code
+#!/bin/bash
+num1=5
+num2=10
+echo "Result of comma operator: $((num1, num2))"
+
+
+
+
+
+
+
+
+16. Read Input and Perform Operations:
+
+bash
+Copy code
+#!/bin/bash
+echo "Enter two numbers:"
+read num1 num2
+echo "Sum: $((num1 + num2))"
+echo "Product: $((num1 * num2))"
+
+
+
+
+
+
+
+17. Use expr for Arithmetic Operations:
+
+bash
+Copy code
+#!/bin/bash
+num1=8
+num2=3
+echo "Addition using expr: $(expr $num1 + $num2)"
+echo "Multiplication using expr: $(expr $num1 \* $num2)"
+
+
+
+
+
+
+
+18. Using sed for Text Replacement:
+
+bash
+Copy code
+#!/bin/bash
+text="Hello, World!"
+new_text=$(echo $text | sed 's/Hello/Hi/')
+echo "Original Text: $text"
+echo "Updated Text: $new_text"

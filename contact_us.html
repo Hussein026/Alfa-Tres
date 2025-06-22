@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* CSS styles can go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Horizontally center content */
+            align-items: center; /* Vertically center content */
+            flex-direction: column; /* Align items vertically */
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo {
+            position: fixed; /* Position the logo relative to the viewport */
+            top: 0; /* Align the logo to the top of the viewport */
+            left: 5%; /* Center the logo horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            z-index: 1000; /* Ensure the logo appears above other content */
+            width: 150px; /* Adjust the width of the logo as needed */
+            height: auto; /* Allow the height to adjust proportionally */
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+   <img src="lg.png" alt="Image" class="logo">
+    <br><br>
+    <h1>Alfa tres</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="about_us.html">About Us</a>
+        <a href="sells.html">Sells</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Contact Us</h2>
+    <p>Feel free to get in touch with us by filling out the form below:</p>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<footer>
+    &copy; 2024 Your Company Name
+</footer>
+
+
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Validate email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Display a response message
+        alert("Thank you, " + name + "! Your message has been received. We will respond to you soon.");
+
+        // Optionally, you can send the form data to a server using Ajax or fetch here
+    });
+</script>
+
+</body>
+</html>

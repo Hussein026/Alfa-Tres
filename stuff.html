@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Stuff Selling Page</title>
+    <style>
+	
+        
+
+		}
+		body {
+    font-family: Arial, sans-serif;
+    margin_right: 50px;
+    padding: 20px;
+	margin: 2.5%;
+}
+  header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+		 nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-category {
+    width: calc(50% - 40px); /* Initially, each section takes 50% of the width */
+    margin: 20px auto; /* Center sections */
+}
+
+.laptop {
+    width: calc(50% - 20px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.laptop img {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute; /* Position the logo relative to the viewport */
+    top: 0; /* Align the logo to the top of the viewport */
+    left: 5%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 1000; /* Ensure the logo appears above other content */
+    width: 150px; /* Adjust the width of the logo as needed */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
+.details {
+    padding-bottom: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-category {
+        width: calc(100% - 40px); /* On smaller screens, each section takes 100% of the width */
+    }
+}
+		
+
+    </style>
+</head>
+<body>
+    <header>
+	<img src="lg.png" alt="Image" class="logo">
+        <h1>Laptop Stuff Selling Page</h1>
+		  <nav>
+            <a href="home.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+    </header>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+     <main>
+        <section class="product-category">
+            <h2>Mouses</h2>
+            <div class="product">
+                <img src="m.jpeg" alt="Mouse">
+                <h3>Wireless Mouse</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more mouse products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>Chargers</h2>
+            <div class="product">
+                <img src="ch.jpeg" alt="Charger">
+                <h3>Laptop Charger</h3>
+                <p>$30.00</p>
+                <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more charger products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>USB Drives</h2>
+            <div class="product">
+                <img src="usb.jpeg" alt="USB Drive">
+                <h3>USB Flash Drive 32GB</h3>
+                <p>$10.00</p>
+                 <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more USB drive products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>Hard Disks</h2>
+            <div class="product">
+                <img src="h.jpeg" alt="Hard Disk">
+                <h3>External Hard Drive 1TB</h3>
+                <p>$60.00</p>
+                 <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more hard disk products here -->
+        </section>
+		<section class="product-category">
+            <h2>Mouses</h2>
+            <div class="product">
+                <img src="m1.jpeg" alt="Mouse">
+                <h3>Wireless Mouse</h3>
+                <p>$20.00</p>
+                 <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more mouse products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>Chargers</h2>
+            <div class="product">
+                <img src="ch1.jpeg" alt="Charger">
+                <h3>Laptop Charger</h3>
+                <p>$30.00</p>
+                 <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more charger products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>USB Drives</h2>
+            <div class="product">
+                <img src="u.jpeg" alt="USB Drive">
+                <h3>USB Flash Drive 32GB</h3>
+                <p>$10.00</p>
+                 <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more USB drive products here -->
+        </section>
+
+        <section class="product-category">
+            <h2>Hard Disks</h2>
+            <div class="product">
+                <img src="h1.jpeg" alt="Hard Disk">
+                <h3>External Hard Drive 1TB</h3>
+                <p>$60.00</p>
+                <button onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+            </div>
+            <!-- Add more hard disk products here -->
+        </section>
+		
+    </main>
+	<br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Laptop Stuff Inc. All rights reserved.</p>
+    </footer>
+	
+	<script>
+	  function addToCart(productName) {
+            alert(productName + " added to cart!");
+        }
+		</script>
+</body>
+</html>

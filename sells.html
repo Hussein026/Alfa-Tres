@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS styles for the laptops */
+        .laptop {
+            width: 45%; /* Set width to 45% for two laptops to fit beside each other */
+            margin: 2.5%; /* Add margin for spacing */
+            float: left; /* Float the laptops to align them beside each other */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            padding: 20px; /* Add padding for spacing inside each laptop */
+            border: 1px solid #ccc; /* Add border for visual separation */
+            border-radius: 5px; /* Add border radius for rounded corners */
+        }
+        .laptop img {
+            width: 100%; /* Make the images fill the entire width of the laptop container */
+            border-radius: 5px; /* Add border radius for rounded corners to images */
+        }
+        .laptop h2 {
+            margin-top: 0; /* Remove default margin for heading */
+        }
+        .laptop p {
+            margin-bottom: 0; /* Remove default margin for paragraphs */
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+		  nav {
+            text-align: right; /* Center navigation links */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: black;
+            padding: 10px 20px;
+            margin: 0 10px;
+			align-items: right;
+        }
+		 nav a:hover {
+            background-color: #555;
+        }
+		/* CSS styles for the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 33px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo {
+            width: 70px; /* Adjust the width as needed */
+            height: 70px; /* Adjust the height as needed */
+            margin-right: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+
+        /* CSS styles for the laptops */
+        .laptop {
+            width: 45%; /* Set width to 45% for two laptops to fit beside each other */
+            margin: 1%; /* Add margin for spacing */
+            float: left; /* Float the laptops to align them beside each other */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            padding: 17px; /* Add padding for spacing inside each laptop */
+            border: 1px solid #ccc; /* Add border for visual separation */
+            border-radius: 5px; /* Add border radius for rounded corners */
+        }
+        .laptop img {
+            width: 35%; /* Make the images fill the entire width of the laptop container */
+            border-radius: 5px; /* Add border radius for rounded corners to images */
+        }
+        .laptop h2 {
+            margin-top: 0; /* Remove default margin for heading */
+        }
+        .laptop p {
+            margin-bottom: 0; /* Remove default margin for paragraphs */
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+		.logo {
+    position: absolute; /* Position the logo relative to the viewport */
+    top: 0; /* Align the logo to the top of the viewport */
+    left: 5%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 1000; /* Ensure the logo appears above other content */
+    width: 150px; /* Adjust the width of the logo as needed */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+ footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   
+<header>
+      <img src="lg.png" alt="Image" class="logo">
+        <h1>Laptops for Sale</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about_us.html">About Us</a>
+			<a href ="stuff.html"  > stuff </a>
+        </nav>
+    </header>
+
+    <main class="clearfix">
+        <!-- Laptop sections here -->
+    </main>
+    <main class="clearfix">
+        <section class="laptop">
+            <h2>ACER Aspire 3 A315-24P-R9WY</h2>
+            <img src="acer.jpeg" alt="Image">
+            <p>PROCESSOR : AMD Ryzen 5 7520U pana la 4.3GHz<br>
+			RAM:16GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:15.6" Full HD</p>
+            <p>Price: $999</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>ACER Aspire 5 A515-57-713N</h2>
+            <img src="acer1.jpeg" alt="Image">
+            <p>PROCESSOR :Intel Core i7-12650H pana la 4.7GHz<br>
+			RAM:16GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:15.6" Full HD</p>
+            <p>Price: $1299</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>HP VICTUS 15</h2>
+           <img src="hp.jpeg" alt="Image">
+            <p>PROCESSOR : CORE I7 1362OH<br>
+			RAM:8GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:15.6"FULL HD-BRAND NEW"</p>
+            <p>Price: $899</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>HP OMEN 17-CM200</h2>
+           <img src="hp1.jpeg" alt="Image">
+            <p>PROCESSOR : CORE 19 13900HX<br>
+			RAM:32GB<br>
+			STORAGE:1TB NVME<br>
+			INFO:17.3"QHD-165HZ"</p>
+            <p>Price: $2250</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>Lenovo IP3</h2>
+           <img src="lenovo.jpeg" alt="Image">
+            <p>PROCESSOR : INTELN4020<br>
+			RAM:8GB<br>
+			STORAGE:256GB NVME<br>
+			INFO:15.6"BRAND NEW"</p>
+            <p>Price: $799</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>LENOVO THINKBOOK 14</h2>
+            <img src="th2.webp" alt="Image">
+            <p>PROCESSOR : CORE I7 11TH<br>
+			RAM:16GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:14.1"FUL HD-TOUCH"</p>
+            <p>Price: $1399</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>TOSHIBA TECRA A40-J-106</h2>
+            <img src="toshiba.jpeg" alt="Image">
+           <p>PROCESSOR : INTEL CORE I5-1135GZ<br>
+			RAM:16GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:15.6"BRAND NEW"</p>
+            <p>Price: $999</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="laptop">
+            <h2>TOSHIBA TECRA A50-J-12X</h2>
+           <img src="toshiba1.jpeg" alt="Image">
+              <p>PROCESSOR : Intel Core i7-1165G7 processor<br>
+			RAM:16GB<br>
+			STORAGE:512GB NVME<br>
+			INFO:14.6"HD-BRAND NEW"</p>
+            <p>Price: $1299</p>
+            <button>Add to Cart</button>
+        </section>
+		
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Laptops Inc. All rights reserved.</p>
+    </footer>
+	
+</body>
+</html>
